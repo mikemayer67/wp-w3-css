@@ -8,7 +8,7 @@ github repository at https://github.com/JaniRefsnes/w3css
 
 Information about the original w3.css can be found at https://www.w3schools.com/w3css
 
-wp-w3.css addresses the inherent incompatibility with w3.css
+wp-w3.css addresses the inherent incompatibility between w3.css
 and many (*most? all?*) Wordpress themes.  It modifies the selectors found 
 in the original w3.css so that element selectors no longer apply at the 
 global scope, but must be contained within an element of class 
