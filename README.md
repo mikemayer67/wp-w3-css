@@ -1,4 +1,5 @@
-# wp-w3_css
+#wp-w3_css
+
 **This is a modification of w3.css for compatibility with Wordpress**
 
 The unmodified w3.css file can be downloaded from
