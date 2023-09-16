@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <link rel=stylesheet href='https://mikemayer67.github.io/wp-w3-css/wp-w3.css'>
+    <link rel=stylesheet href='wp-w3.css'>
+  </head>
+  <body class='w3-css'>
+    <div class='w3-container'>
+
+      <h1>wp-w3.css</h1>
+      <div class='w3-panel w3-card w3-large w3-sans-serif w3-sand'>
+        <p><b>This is a modification of w3.css for compatibility with Wordpress</b></p>
+        <ul>
+          <li>The unmodified w3.css file can be downloaded from
+            <a href='https://www.w3schools.com/w3css/4/w3.css'>
+              https://www.w3schools.com/w3css/4/w3.css
+            </a>
+            or its
+            <a href='https://github.com/JaniRefsnes/w3css'>
+              github repository
+            </a>.
+          </li>
+
+          <li> Information about the original w3.css can be found at
+            <a href='https://www.w3schools.com/w3css'>
+              https://www.w3schools.com/w3css
+            </a>
+          </li>
+      </div>
+
+      <div class="w3-panel w3-card w3-large w3-sans-serif w3-sand">
+        <p>wp-w3.css addresses the inherent incompatibility with w3.css
+        and many (<i>most? all?</i>) Wordpress themes.  It modifies the selectors found 
+        in the original w3.css so that element selectors no longer apply at the 
+        global scope, but must be contained within an element of class 
+        <code>w3-css</code>.
+        </p>
+      </div>
+
+      <div class='w3-panel w3-card w3-large w3-sans-serif w3-sand'>
+        <p>
+        The simplest way to use this css with your Wordpress plugin is 
+        probably to enclose all generated html within a 
+        <code class="wp-smaller">&lt;div class=w3-css&gt;</code>
+        </p>
+
+        <ul>
+          <li>Any html element that is <b>not</b> a child of a w3-css element will only
+            see the effect of explicitly specified w3-<i>xxx</i> classes.</li>
+
+          <li>Any html element that <b>is a child</b> of a w3-css element will see all 
+            the effects of w3.css even if it does not specify a w3-<i>xxx</i> class.</li>
+        </ul>
+      </div>
+
+      <div class='w3-panel w3-card w3-large w3-sans-serif w3-sand'>
+        <p>To include wp-w3.css with your Wordpress plugin, you will need to 
+        enqueue the style:</p>
+
+      <div class='w3-panel w3-card w3-white'>
+      <pre>wp_enqueue_style(
+  'wp-w3-css',
+  'https://mikemayer67.github.io/wp-w3-css/wp-w3.css'
+);</pre>
+      </div>
+      </div>
+
+      <div class='w3-panel w3-card w3-large w3-sans-serif w3-sand'>
+        <p>To include wp-w3.css in a non-Wordpress site, you will need to include
+        it in the html header:</p>
+
+      <div class='w3-panel w3-card w3-white'>
+      <pre>&lt;link rel=stylesheet href='https://mikemayer67.github.io/wp-w3-css/wp-w3.css'&gt;</pre>
+      </div></div>
+
+    </div>
+  </body>
+</html>
